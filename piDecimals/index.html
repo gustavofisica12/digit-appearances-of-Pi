@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/54f9336c0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Digit appearances of Pi</title>
+</head>
+<body>
+    <div class="container">
+        <header class="head">
+            <h1 class="title">Digit appearances of Pi</h1>
+        </header>
+
+        <main class="main">
+            <section class="instructions">
+                <div>
+                    <h3>How this works?</h3>
+                </div>
+                <p>
+                    This web application can analyze the first 15000 decimals of Pi and count how many times each digit (0 to 9) appear.
+                    Write in the box how many decimals (from 1 to 15000) you want to analyze.
+                </p>
+            </section>
+
+            <section class="calculator_section">
+
+                <div class="calculator_box">
+
+                    <div>
+                        <h3>Times each digit appear</h3>
+                    </div>
+
+                    <div class="calculator">
+                        <div class="control">
+                            <label for="decimals" class="decimals_label">Decimals:</label>
+                            <input type="text" name="decimals" id="decimals" class="decimals" maxlength="5" max="15000" min="0" placeholder="0">
+                            <button class="calculator_button" id="up">+</button>
+                            <button class="calculator_button" id="down">-</button>
+                        </div>
+                        
+                        <div class="responsive_items">
+                            <div class="counters">
+                                <div class="first_counters">
+                                    <p class="counter" id="cero">0: 0</p>
+                                    <p class="counter" id="one">1: 0</p>
+                                    <p class="counter" id="two">2: 0</p>
+                                    <p class="counter" id="three">3: 0</p>
+                                    <p class="counter" id="four">4: 0</p>
+                                </div>
+                
+                                <div class="second_counters">
+                                    <p class="counter" id="five">5: 0</p>
+                                    <p class="counter" id="six">6: 0</p>
+                                    <p class="counter" id="seven">7: 0</p>
+                                    <p class="counter" id="eight">8: 0</p>
+                                    <p class="counter" id="nine">9: 0</p>
+                                </div>
+                            </div>
+
+                            <div class="piLogo">
+                                <img src="img/pi2.jpg" alt="Pi">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="graphic" id="graphic">
+                    <!--The graphic will appear inside this DIV-->
+                </div>
+            </section>
+
+            <section class="why">
+                    <div>
+                        <h3>Why this?</h3>
+                    </div>
+                    <div class="text_why">
+                        <p>As everybody know, Pi has infinite decimals, starting with</p>
+                        <div class="image_of_pi">
+                            <img src="img/pi.jpg" alt="Number Pi">
+                        </div>
+                        <p>This special number has been studied by a lot of people that tried to find patterns in its decimals,
+                            without success. The digits seems to appear randomly and symmetrically. This program was created to prove that 
+                            this is indeed the case.
+                        </p>
+
+                        <br>
+    
+                        <p>As you use the program, you will be able to realize that by increasing the number of decimals to analyze,
+                        all the digits appear symmetrically; none of them predominates or lags behind. It seems that all the digits are generated randomly and uniformly
+                        distributed!!! Make your own conclusions.</p>
+                    </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <h3>Created by Gustavo Carrillo Cervera</h3>
+            <div class="icons_box">
+                <div class="icon_box"><a href="https://www.linkedin.com/in/gustavo-carrillo-cervera-10349b22b/"><i class="fa fa-linkedin-square icon_img" aria-hidden="true"></i></a></div> <!--class="fa fa-linkedin"-->
+                <div class="icon_box"><a href="https://github.com/gustavofisica12"><i class="fa fa-github-square icon_img" aria-hidden="true"></i></a></div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
